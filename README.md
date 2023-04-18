@@ -42,6 +42,11 @@ task  (.zip)<br/>
  input<br/>
     PathtoPublish:'$(build.artifactstagingdirectory)'<br/>
 ================================<br/>
+![image](https://user-images.githubusercontent.com/43515480/232720861-acb676cc-886c-4029-999e-bf62f2bd067a.png)
+![image](https://user-images.githubusercontent.com/43515480/232720888-4fc743ce-797c-4689-a5e5-a40c38170da4.png)
+
+![image](https://user-images.githubusercontent.com/43515480/232720725-17076258-2de3-4130-a0c7-1e130b8e3d27.png)
+
 
 
 
