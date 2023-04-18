@@ -87,32 +87,8 @@ project settings--> Service Connection
 change java 11
 ![image](https://user-images.githubusercontent.com/43515480/232747184-3793e03f-361a-4f83-9765-0b044c28ed75.png)
 
+![image](https://user-images.githubusercontent.com/43515480/232762420-9c2ec309-6374-4e2a-b433-8d702823a74d.png)
 
-Docker & Kubernetes deployment
-version: "3"
-services:
-  web:
-    container_name: web-app
-    build: 
-      dockerfile: Dockerfile
-      context: MvcApp
-    ports:
-      - "8008:80"
-    environment:
-      ConnectionStrings__ProductsContext: "Server=db;Database=ProductsContext;User=sa;Password=@Aa123456;"
-    depends_on:
-      - db
-
-  db:
-    container_name: mssql-db
-    image: "mcr.microsoft.com/mssql/server:2019-CU4-ubuntu-16.04" #"microsoft/mssql-server-linux"
-    expose:
-      - "1433"
-    environment:
-      SA_PASSWORD: "@Aa123456"
-      ACCEPT_EULA: "Y"
-    ports:
-      - "1433:1433"
       
       Run <b>Docker-compose build</b>
 
