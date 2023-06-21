@@ -1,3 +1,23 @@
+1) Issue : Run parallel job
+How to run Parallel Jobs in azure devops |Run stages parallel on multi/Single agent in YAML pipeline
+https://www.youtube.com/watch?v=esXNOyLbBks&t=341s
+
+pool:
+  vmImage: ubuntu-latest
+stages:
+  - stage: Stage1
+    displayName: 'Bash Script Stage1'
+    jobs:
+    - job: Job1
+  - stage: Stage2
+    displayName: 'Bash Script Stage2'
+    dependsOn: []
+    jobs:
+     - job: Job2
+
+            
+![image](https://github.com/rajneeshprakashhajela/AzureDevOpsPipeline/assets/43515480/c58b9967-8509-450b-aebf-d7a41056effd)
+
 Azure DevOps
 
 1) Azure DevOps - Pipleline with .net core (restore, build, test, publish) <br/>
